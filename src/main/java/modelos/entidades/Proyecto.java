@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package clases;
+package modelos.entidades;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +18,7 @@ public class Proyecto {
     private Date fechaFin;
     private String descripcion;
     private EquipoDeTrabajo equipo;
-
+    private ArrayList<Tarea> tareas;
     public int getIdProyecto() {
         return idProyecto;
     }
@@ -67,15 +67,25 @@ public class Proyecto {
         this.equipo = equipo;
     }
 
-    public Proyecto(int idProyecto, String nombre, Date fechaInicio, Date fechaFin, String descripcion, EquipoDeTrabajo equipo) {
+    public ArrayList<Tarea> getTareas() {
+        return tareas;
+    }
+
+    public void setTareas(ArrayList<Tarea> tareas) {
+        this.tareas = tareas;
+    }
+
+    public Proyecto(int idProyecto, String nombre, Date fechaInicio, Date fechaFin, String descripcion, EquipoDeTrabajo equipo, ArrayList<Tarea> tareas) {
         this.idProyecto = idProyecto;
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.descripcion = descripcion;
         this.equipo = equipo;
+        this.tareas = tareas;
     }
 
     public Proyecto() {
     }
+    
 }
