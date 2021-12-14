@@ -22,6 +22,7 @@ public class RecursoDTO {
     }
 
     public RecursoDTO() {
+        this.recurso= new Recurso();
     }
 
     public RecursoDTO(Recurso recurso) {

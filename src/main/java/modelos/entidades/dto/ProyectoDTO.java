@@ -26,6 +26,7 @@ public class ProyectoDTO {
     }
 
     public ProyectoDTO() {
+        this.proyecto=new Proyecto();
     }
     
 }

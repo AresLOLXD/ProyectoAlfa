@@ -87,6 +87,8 @@ public class Tarea {
     }
 
     public Tarea() {
+        this.responsables=new ArrayList<>();
+        this.recursos=new ArrayList<>();
     }
     
 

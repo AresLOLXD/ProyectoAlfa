@@ -4,26 +4,30 @@
  */
 package modelos.entidades.dto;
 
+import modelos.entidades.EquipoDeTrabajo;
+
 /**
  *
  * @author aresu
  */
 public class EquipoDeTrabajoDTO {
-    private EquipoDeTrabajoDTO equipoDeTrabajoDTO;
+    private EquipoDeTrabajo equipoDeTrabajo;
 
-    public EquipoDeTrabajoDTO getEquipoDeTrabajoDTO() {
-        return equipoDeTrabajoDTO;
+    public EquipoDeTrabajo getEquipoDeTrabajo() {
+        return equipoDeTrabajo;
     }
 
-    public void setEquipoDeTrabajoDTO(EquipoDeTrabajoDTO equipoDeTrabajoDTO) {
-        this.equipoDeTrabajoDTO = equipoDeTrabajoDTO;
+    public void setEquipoDeTrabajo(EquipoDeTrabajo equipoDeTrabajo) {
+        this.equipoDeTrabajo = equipoDeTrabajo;
     }
 
-    public EquipoDeTrabajoDTO(EquipoDeTrabajoDTO equipoDeTrabajoDTO) {
-        this.equipoDeTrabajoDTO = equipoDeTrabajoDTO;
+    public EquipoDeTrabajoDTO(EquipoDeTrabajo equipoDeTrabajo) {
+        this.equipoDeTrabajo = equipoDeTrabajo;
     }
 
     public EquipoDeTrabajoDTO() {
+        this.equipoDeTrabajo= new EquipoDeTrabajo();
     }
+
     
 }

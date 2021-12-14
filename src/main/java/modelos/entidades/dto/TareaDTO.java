@@ -26,6 +26,7 @@ public class TareaDTO {
     }
 
     public TareaDTO() {
+        this.tarea= new Tarea();
     }
     
 }

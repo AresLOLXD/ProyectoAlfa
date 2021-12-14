@@ -22,6 +22,7 @@ public class UsuarioDTO {
     }
 
     public UsuarioDTO() {
+        this.usuario= new Usuario();
     }
 
     public UsuarioDTO(Usuario usuario) {
